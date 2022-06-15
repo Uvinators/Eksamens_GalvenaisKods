@@ -3,7 +3,20 @@
 //Lietotājs atbild uz katru jautājumu 1 reizi un saņem tūlītēju novērtējumu, vai atbilde pareiza vai nepareiza. Beigās paziņo, cik jautājumi atbildēti pareizi un izdrukā jautājumu sarakstu, uz kuriem atbildēts nepareizi.
 
 #include <iostream>
+using namespace std;
 
 int main() {
-  std::cout << "Hello World!\n";
+
+int sak;
+  
+  cout<< "Tests par Viendimensiju masīviem programmēšanas valodā C++\n";
+  cout<<"\nVai vēlies sākt?";
+  cout<<"\nja = 1    ne = 2\n";
+  cin>>sak;
+  if(sak == 1){
+    }else if(sak == 2){
+    cout<<"\nTad neko :(";
+  }
+  
+  
 }
