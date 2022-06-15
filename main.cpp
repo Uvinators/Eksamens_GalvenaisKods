@@ -32,16 +32,33 @@ int sak;
   if(sak == 1){
 
   int izv;
+     int prezultats;
+     string nepareizie = "";
     
 string jaut1[] ={"Ka vel sauc viendimensiju masivus?\n"};
 
     string atb1[] =  {"1. Masiv\n2. Array\n3. list\n4. tower"};
-    
- cout << jaut1[1] << endl;
-    cout << atb1[1] << endl;
-    cin >> izv;
-    atbilde(izv, 2);
 
+int par[] = {2};
+    
+ for(int i=0; i<10; i++){
+     cout << jaut1[i] << endl;
+    cout << atb1[i] << endl;
+    cin >> izv;
+   prezultats = rezultats;
+    atbilde(izv, par[i]);
+    if(prezultats == rezultats){
+      nepareizie = nepareizie + to_string(i);
+      } 
+    }
+
+cout<<"\nTavi iegutie punkti = "<<rezultats<<"\n";
+       cout<<("Nepareizi atbildētie jautājumi:\n");
+    int i = 0; 
+        while(i<nepareizie.length()) {
+            cout<<jaut1[(int)(nepareizie[i]) - 48];
+            i++;
+        } 
     
     }else if(sak == 2){
     cout<<"\nTad neko :(";
