@@ -5,6 +5,20 @@
 #include <iostream>
 using namespace std;
 
+ void atbilde(int izv, int atbilde){
+        
+    if (izv == atbilde)
+    {
+        cout << "Malacis!\n" << endl;
+      rezultats++;
+    }
+    else
+    {
+        cout << "Ši atbilde nav pareiza.\n" << endl;
+      
+    }
+          }
+
 int main() {
 
 int sak;
@@ -14,6 +28,11 @@ int sak;
   cout<<"\nja = 1    ne = 2\n";
   cin>>sak;
   if(sak == 1){
+
+string jaut1[] ={"Ka vel sauc viendimensiju masivus?\n"};
+
+    string atb1[] =  {"1. Masiv\n2. Array\n3. list\n4. tower"};
+    
     }else if(sak == 2){
     cout<<"\nTad neko :(";
   }
