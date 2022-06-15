@@ -4,6 +4,8 @@
 
 #include <iostream>
 using namespace std;
+#include <string>
+int rezultats = 0;
 
  void atbilde(int izv, int atbilde){
         
@@ -29,9 +31,13 @@ int sak;
   cin>>sak;
   if(sak == 1){
 
+  int izv;
+    
 string jaut1[] ={"Ka vel sauc viendimensiju masivus?\n"};
 
     string atb1[] =  {"1. Masiv\n2. Array\n3. list\n4. tower"};
+ cin >> izv;
+int par[] = {2};
     
     }else if(sak == 2){
     cout<<"\nTad neko :(";
